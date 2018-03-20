@@ -1,0 +1,71 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="icon" href="media/icon.jpeg" type="image/jpeg" sizes="16x16"> <!--Se pone icono en la pestaña de la pagina-->
+        <title>TechnoHouse</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/sweetalert.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+    </head>
+    <body>
+      <header>
+        <!--Barra de navegacion-->
+        <nav class="navbar navbar-static-top navbar-inverse" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <!--Barra de navegacion responsive-->
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menuDesplegable">
+                <span class="sr-only">Desplegar / Ocultar Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!--opciones de la barra de navegacion-->
+              <a href="index.html" class="navbar-brand">TechnoHouse</a>
+            </div>
+            <div class="collapse navbar-collapse" id="menuDesplegable">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="" >Registro</a></li>
+                <li><a href="login.html">Iniciar Sesion</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="container">
+        <form action="../controladores/registro.php" method="POST">
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <div class="jumbotron">
+                <div class="row">
+                  <h2 class="text-center">Este usuario ya existe</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 text-center">
+                      <br><br>
+                      <a href="registro.html" class="btn btn-primary">Intentar de nuevo</a>
+                    </div>
+                    <div class="col-md-4 text-center"></div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+        </form>
+      </section>
+    </div> 
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <form action="../controladores/registroEmpleado.php" method="POST">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="jumbotron">
+                <div class="row">
+                  <h2 class="text-center">Registro Empleado</h2>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4 text-center">
+                      <input class="text-center" type="text" placeholder="Nombre" name="nombre" required>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <input class="text-center" type="text" placeholder="Apellido Paterno" name="apellidoPaterno" required>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <input class="text-center" type="text" placeholder="Apellido Materno" name="apellidoMaterno">
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-4 text-center">
+                      <input class="text-center" type="text" placeholder="Correo" name="correo" required>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <input class="text-center" type="text" placeholder="Usuario" name="usuario" required>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <input class="text-center" type="password" placeholder="Password" name="password" required>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-6 text-center">
+                      <input class="text-center" type="text" placeholder="ID Agencia" name="id_agencia" required>
+                    </div>
+                    <div class="col-md-6 text-center">
+                      <select name="tipo_empleado" required>
+                      	<option ></option>
+                      	<option value="VENDEDOR">VENDEDOR</option>
+                      	<option value="TITULAR">TITULAR</option>
+                      </select>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row text-center">
+                    <button class="btn btn-primary">Registrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+</div>
+</body>
+</html>
